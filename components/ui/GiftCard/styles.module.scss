@@ -1,0 +1,114 @@
+.giftCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  height: 100%;
+}
+
+.pattern {
+  width: 100%;
+  height: auto;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.05;
+}
+
+:global(.dark) .pattern {
+  opacity: 0.4;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  z-index: 1;
+  padding: 0.5rem 0.5rem 0.75rem;
+  color: var(--theme-text);
+  width: 100%;
+  height: 100%;
+  .cardInfo {
+    width: 100%;
+  }
+  .topInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    .senderPic {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .remaining {
+    padding: 0 0.25rem;
+    width: 100%;
+    text-align: right;
+    font-size: var(--font-very-small);
+    color: var(--theme-subtitle);
+  }
+  .icon {
+    width: 100%;
+    font-size: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & h3 {
+    font-size: var(--font-medium);
+    font-weight: 600;
+    text-align: center;
+    color: var(--theme-text);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    word-break: break-word;
+  }
+  & h4 {
+    font-size: var(--font-very-small);
+    font-weight: 400;
+    text-align: center;
+    color: var(--theme-subtitle);
+  }
+  & .price {
+    background-color: var(--theme-button);
+    color: var(--theme-button-text);
+    font-size: var(--font-very-small);
+    font-weight: 600;
+    padding: 0 1rem;
+    border-radius: 10rem;
+    display: flex;
+    height: 1.875rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &.active {
+      opacity: 0.8;
+    }
+
+    &.disabled {
+      background-color: var(--theme-subtitle);
+      cursor: not-allowed;
+    }
+
+    & svg {
+      font-size: 1rem;
+    }
+  }
+}

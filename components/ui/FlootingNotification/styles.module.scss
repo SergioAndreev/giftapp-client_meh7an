@@ -1,0 +1,78 @@
+.notificationWrapper {
+  position: fixed;
+  top: calc(var(--tg-viewport-height) - 5rem);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: calc(100% - 2rem);
+  max-width: 28rem;
+  z-index: 999999;
+  background-color: #000000;
+  border-radius: 0.875rem;
+  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    background-color: #000000cc;
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+  }
+}
+
+.notification {
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.lottieContainer {
+  width: 1.875rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.title {
+  color: #ffffff;
+  font-size: var(--font-small);
+  font-weight: 600;
+  margin: 0;
+}
+
+.description {
+  color: #ffffff;
+  font-size: var(--font-small);
+  font-weight: 400;
+  margin: 0;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: var(--theme-accent);
+  cursor: pointer;
+  font-size: var(--font-medium);
+  font-weight: 500;
+  padding: 0;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

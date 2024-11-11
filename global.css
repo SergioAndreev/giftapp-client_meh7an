@@ -1,0 +1,50 @@
+:root {
+  --font-very-large: 2rem;
+  --font-large: 1.5rem;
+  --font-medium: 1.0625rem;
+  --font-regular: 0.9375rem;
+  --font-small: 0.875rem;
+  --font-very-small: 0.8125rem;
+
+  --tg-theme-border-color: rgba(var(--theme-separator-rgb), 0.3);
+  --theme-border: var(--tg-theme-border-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif,
+    Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji",
+    Segoe UI Symbol, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--theme-main-bg);
+  color: var(--theme-text);
+  overflow: hidden;
+  position: relative;
+  height: var(--tg-viewport-height);
+  max-width: 220vh;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.tabBar {
+  position: fixed;
+  top: calc(var(--tg-viewport-height) - 4rem);
+}

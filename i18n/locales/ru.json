@@ -1,0 +1,108 @@
+{
+  "tabs": {
+    "store": "Магазин",
+    "gifts": "Подарки",
+    "leaderboard": "Рейтинг",
+    "profile": "Профиль"
+  },
+  "store": {
+    "title": "Покупайте и отправляйте подарки",
+    "description": "Уникальные подарки для каждого от Crypto Pay",
+    "card": {
+      "remaining": "{{remaining}} из {{total}}"
+    }
+  },
+  "gifts": {
+    "title": "Отправляйте подарки в Telegram",
+    "description": "Отправляйте подарки пользователям, которые сохранятся в их профиле",
+    "card": {
+      "send": "Отправить",
+      "soldOut": "Распродано"
+    },
+    "noGifts": "У вас пока нет подарков.",
+    "noGiftsProfile": "Вы можете купить подарок, чтобы получить подарок в ответ.",
+    "openStore": "Открыть магазин"
+  },
+  "leaderboard": {
+    "giftsCount": "{{count}} подарков",
+    "you": "Вы",
+    "search": "Поиск",
+    "cancel": "Отмена"
+  },
+  "profile": {
+    "giftsReceived": "{{count}} подарков получено",
+    "recentActions": "Недавние действия ›",
+    "card": {
+      "remaining": "{{remianing}} из {{total}}"
+    }
+  },
+  "recentActions": {
+    "title": "Недавние действия",
+    "description": "Вот история ваших действий.",
+    "events": {
+      "SENT": "Отправлено",
+      "RECEIVED": "Получено",
+      "PURCHASED": "Куплено",
+      "toWhom": "кому",
+      "fromWhom": "от кого"
+    },
+    "noHistory": {
+      "title": "История пуста",
+      "description": "Дарите и получайте подарки, чтобы здесь что-то появилось."
+    }
+  },
+  "modal": {
+    "sendGift": {
+      "title": "Отправить подарок",
+      "fields": {
+        "name": "Название",
+        "date": "Дата",
+        "price": "Цена",
+        "availability": "Доступность"
+      },
+      "button": "Отправить подарок контакту"
+    },
+    "giftInfo": {
+      "fields": {
+        "from": "От",
+        "date": "Дата",
+        "price": "Цена",
+        "availability": "Доступность"
+      },
+      "button": "Закрыть"
+    }
+  },
+  "singleGift": {
+    "description": "Купите этот подарок, чтобы подарить его другому пользователю",
+    "recentActions": "Недавние действия",
+    "events": {
+      "SENT": "Отправил подарок",
+      "RECEIVED": "Получил подарок",
+      "PURCHASED": "Купил подарок"
+    },
+    "details": {
+      "sentTo": "отправил подарок",
+      "purchased": "купил подарок"
+    }
+  },
+  "successful": {
+    "giftReceived": "Подарок получен",
+    "giftReceivedDescription": "Вы получили подарок {{name}}.",
+    "giftPurchased": "Подарок куплен",
+    "giftPurchasedDescription": "Подарок {{name}} был куплен за {{price}}\u00A0{{currency}}.",
+    "notification": {
+      "purchasedTitle": "Вы купили подарок",
+      "purchasedDescription": "Теперь отправьте его другу.",
+      "purchasedButton": "Отправить",
+      "receivedTitle": "Подарок получен",
+      "receivedDescription": "{{name}} от {{firstName}}.",
+      "yourself": "себя",
+      "receivedButton": "Посмотреть"
+    },
+    "buttons": {
+      "send": "Отправить подарок",
+      "store": "Открыть магазин",
+      "profile": "Открыть профиль"
+    }
+  }
+}

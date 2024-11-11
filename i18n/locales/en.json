@@ -1,0 +1,108 @@
+{
+  "tabs": {
+    "store": "Store",
+    "gifts": "Gifts",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile"
+  },
+  "store": {
+    "title": "Buy and Send Gifts",
+    "description": "Unique gifts for everyone by Crypto Pay",
+    "card": {
+      "remaining": "{{remaining}} of {{total}}"
+    }
+  },
+  "gifts": {
+    "title": "Send Gifts in Telegram",
+    "description": "Send gifts to users that can be stored in their profile",
+    "card": {
+      "send": "Send",
+      "soldOut": "Sold Out"
+    },
+    "noGifts": "You don't have any gifts yet.",
+    "noGiftsProfile": "You can buy a gift to receive a gift in return.",
+    "openStore": "Open Store"
+  },
+  "leaderboard": {
+    "giftsCount": "{{count}} gifts",
+    "you": "You",
+    "search": "Search",
+    "cancel": "Cancel"
+  },
+  "profile": {
+    "giftsReceived": "{{count}} gifts received",
+    "recentActions": "Recent Actions ›",
+    "card": {
+      "remaining": "{{remianing}} of {{total}}"
+    }
+  },
+  "recentActions": {
+    "title": "Recent Actions",
+    "description": "Here is your action history.",
+    "events": {
+      "SENT": "Sent",
+      "RECEIVED": "Received",
+      "PURCHASED": "Purchased",
+      "toWhom": "to",
+      "fromWhom": "from"
+    },
+    "noHistory": {
+      "title": "History is Empty",
+      "description": "Give and receive gifts so there's something here."
+    }
+  },
+  "modal": {
+    "sendGift": {
+      "title": "Send Gift",
+      "fields": {
+        "name": "Name",
+        "date": "Date",
+        "price": "Price",
+        "availability": "Availability"
+      },
+      "button": "Send Gift to Contact"
+    },
+    "giftInfo": {
+      "fields": {
+        "from": "From",
+        "date": "Date",
+        "price": "Price",
+        "availability": "Availability"
+      },
+      "button": "Close"
+    }
+  },
+  "singleGift": {
+    "description": "Purchase this gift for the opportunity to give it to another user.",
+    "recentActions": "Recent Actions",
+    "events": {
+      "SENT": "Sent gift",
+      "RECEIVED": "Received gift",
+      "PURCHASED": "Purchased gift"
+    },
+    "details": {
+      "sentTo": "sent gift to",
+      "purchased": "bought a gift"
+    }
+  },
+  "successful": {
+    "giftReceived": "Gift Received",
+    "giftReceivedDescription": "You have received the gift {{name}}.",
+    "giftPurchased": "Gift Purchased",
+    "giftPurchasedDescription": "The {{name}} gift was purchased for {{price}}\u00A0{{currency}}.",
+    "notification": {
+      "purchasedTitle": "You bought a gift",
+      "purchasedDescription": "Now send it to your friend.",
+      "purchasedButton": "Send",
+      "receivedTitle": "Gift Received",
+      "receivedDescription": "{{name}} from {{firstName}}.",
+      "yourself": "yourself",
+      "receivedButton": "View"
+    },
+    "buttons": {
+      "send": "Send Gift",
+      "store": "Open Store",
+      "profile": "Open Profile"
+    }
+  }
+}

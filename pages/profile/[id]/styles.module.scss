@@ -1,0 +1,141 @@
+.container {
+  margin: 0 auto;
+  height: var(--tg-viewport-height);
+  overflow-y: auto;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--theme-main-bg);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--theme-button);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-button);
+    filter: brightness(0.8);
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-button) var(--theme-main-bg);
+}
+
+.content {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.topSwitches {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 2rem);
+}
+
+.profileArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  .profileHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+  .profileImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img,
+    .avatarPlaceholder {
+      width: 6.25rem;
+      height: 6.25rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .avatarPlaceholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--theme-tiles-bg);
+      color: var(--theme-text);
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .rank {
+      width: fit-content;
+      padding: 0rem 0.5rem;
+      border-radius: 5rem;
+      margin-top: -1rem;
+      border: 0.2rem solid var(--theme-main-bg);
+      color: var(--theme-button-text);
+    }
+  }
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .profileName {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      h1 {
+        font-size: var(--font-large);
+        color: var(--theme-text);
+        font-weight: 600;
+      }
+      svg {
+        color: var(--theme-accent);
+      }
+    }
+
+    p {
+      font-size: var(--font-medium);
+      color: var(--theme-subtitle);
+      font-weight: 400;
+    }
+    .recentActions {
+      color: var(--theme-link);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.errorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--theme-error-bg);
+  border-radius: 0.5rem;
+  color: var(--theme-error-text);
+  font-size: var(--font-medium);
+  font-weight: 500;
+  text-align: center;
+}

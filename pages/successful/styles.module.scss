@@ -1,0 +1,37 @@
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.giftContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vw;
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  margin-top: calc(50vh - 60vw);
+  .giftIcon {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+.successDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: calc(-20vw + 1rem);
+
+  h1 {
+    font-size: var(--font-large);
+    font-weight: 600;
+  }
+  p {
+    font-size: var(--font-medium);
+    font-weight: 400;
+  }
+}

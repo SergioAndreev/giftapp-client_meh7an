@@ -1,0 +1,45 @@
+.bottomBar {
+  display: flex;
+  position: fixed;
+  bottom: -10rem;
+  top: calc(var(--tg-viewport-height) - 4rem);
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+  background-color: var(--theme-tabbar-bg);
+  border-top: 1px solid var(--tg-theme-border-color);
+  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    background-color: rgba(var(--theme-tabbar-bg-rgb), 0.8);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+  }
+  & .bottomBarIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    padding-top: 0.75rem;
+    gap: 0.25rem;
+    color: var(--theme-subtitle);
+    cursor: pointer;
+    &.active {
+      color: var(--theme-accent);
+    }
+    & div {
+      font-size: 1.625rem;
+    }
+
+    & svg {
+      font-size: 1.625rem;
+    }
+
+    & span {
+      font-size: 0.625rem;
+      font-weight: 600;
+    }
+  }
+}
